@@ -128,7 +128,9 @@ function App() {
                 </Row>
             </form>
 
-            <Row className="flex justify-center border-green-600">{target.targetFinalGrade}</Row>
+            <Row className="flex justify-center border-green-600">
+                {target.targetFinalGrade}
+            </Row>
         </div>
     );
 }
