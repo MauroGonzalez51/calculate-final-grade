@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
-import { twJoin } from "tailwind-merge";
+import { twMerge } from "tailwind-merge";
 
 export function Row({ children, className, ...props }) {
     return (
         <div
             {...props}
-            className={twJoin(
+            className={twMerge(
                 "flex flex-col lg:flex-row p-4 border border-solid border-purple-700 rounded-md m-4 gap-4",
                 className,
             )}

@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-import { twJoin } from "tailwind-merge";
+import { twMerge } from "tailwind-merge";
 
 export function Button({ children, className, ...props }) {
     return (
-        <button {...props} className={twJoin("p-4 flex-grow border border-solid rounded-md", className)}>
+        <button {...props} className={twMerge("p-4 flex-grow border border-solid rounded-md", className)}>
             {children}
         </button>
     );
